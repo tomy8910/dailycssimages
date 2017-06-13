@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Panda</title>
+  <style>
+    body {
+      min-height: 100vh;
+      background-color: #57b0cc;
+      position: relative;
+    }
+
+    .panda {
+      height: 500px;
+      width: 50%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .panda-head {
+      background: rgb(240, 238, 223);
+      height: 50%;
+      width: 50%;
+      border-radius: 100%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      z-index: 5;
+    }
+
+    .right-ear {
+      width: 20%;
+      height: 20%;
+      background: black;
+      position: absolute;
+      right: 22%;
+      top: 25%;
+      z-index: 1;
+      border-radius: 100%;
+    }
+
+    .left-ear {
+      width: 20%;
+      height: 20%;
+      background: black;
+      position: absolute;
+      left: 22%;
+      top: 25%;
+      z-index: 1;
+      border-radius: 100%;
+    }
+
+    .left-eye {
+      width: 12%;
+      height: 18%;
+      background: #333;
+      position: absolute;
+      border-radius: 50px;
+      top: 30%;
+      left: 37%;
+      z-index: 6;
+      transform: rotate(20deg);
+    }
+
+    .right-eye {
+      width: 12%;
+      height: 18%;
+      background: #333;
+      position: absolute;
+      border-radius: 50px;
+      top: 30%;
+      right: 37%;
+      z-index: 6;
+      transform: rotate(-20deg);
+    }
+
+    .inner-eye {
+      width: 80%;
+      height: 80%;
+      background: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50px;
+    }
+
+    .nose {
+      width: 5%;
+      height: 5%;
+      background: black;
+      top: 50%;
+      position: absolute;
+      left: 48%;
+      z-index: 6;
+      border-radius: 100px;
+      perspective-origin: bottom right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="panda">
+    <div class="panda-head">
+    </div>
+    <div class="right-ear">
+      <div class="inner-ear"></div>
+    </div>
+    <div class="left-ear">
+      <div class="inner-ear"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="left-eye">
+      <div class="inner-eye">
+
+      </div>
+    </div>
+    <div class="right-eye">
+      <div class="inner-eye"></div>
+    </div>
+    <div class="mouth"></div>
+
+  </div>
+</body>
+
+</html>
