@@ -1,0 +1,67 @@
+body {
+  min-height: 100vh;
+  position: relative;
+  background: #dab201; }
+
+.beaver {
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px; }
+
+.beaver-head {
+  width: 70%;
+  height: 70%;
+  background: #a06d2c;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 15%; }
+
+.beaver-head-copy {
+  width: 100%;
+  height: 100%;
+  background: #a06d2c;
+  border-radius: 50%; }
+
+.beaver-left-eye {
+  background: white;
+  height: 40%;
+  width: 30%;
+  position: absolute;
+  top: 3.2%;
+  left: 20%;
+  border-radius: 50%; }
+
+.beaver-right-eye {
+  background: white;
+  height: 40%;
+  width: 30%;
+  position: absolute;
+  top: 3.2%;
+  right: 20%;
+  border-radius: 50%; }
+
+.inner-eye {
+  width: 45%;
+  height: 55%;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.inner-eye::after {
+  content: '';
+  width: 25%;
+  height: 35%;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  right: 0; }
+
+/*# sourceMappingURL=beaver.css.map */
