@@ -450,12 +450,17 @@
 
 <body>
   <h1>Daily CSS Images</h1>
-  <a href="./panda/panda.html">Panda</a>
-  <a href="./elephant/elephant.html">Elephant</a>
+  <div>Day 1 =&gt; <a href="./panda/panda.html">Panda</a> </div>
+  <div>Day 2 =&gt; <a href="./elephant/elephant.html">Elephant</a> </div>
+  <div>Day 3 =&gt; <a href="./beaver/beaver.html">Beaver</a></div>
   <style>
     h1 {
-      font-family: fantasy;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0 auto;
+    }
+
+    div {
+      font-size: 40px;
     }
 
     a:link,
@@ -463,7 +468,7 @@
       color: #333;
       background-color: white;
       text-decoration: none;
-      display: block;
+      display: inline-block;
       font-size: 30px;
       transition: color 0.2s, background-color 0.2s;
     }

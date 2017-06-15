@@ -22,11 +22,33 @@
     .panda {
       height: 500px;
       width: 500px;
-
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+
+    @media screen and (min-width:1024px) {
+      .panda {
+        height: 800px;
+        width: 800px;
+      }
+    }
+
+    @media screen and (min-width:1440px) {
+      .panda {
+        height: 1200px;
+        width: 1200px;
+      }
+    }
+
+
+    @media all and (min-width:2560px) {
+      .panda {
+        height: 2000px;
+        width: 2000px;
+      }
     }
 
     .panda-head {
@@ -87,6 +109,7 @@
       transform: rotate(-20deg);
     }
 
+
     .inner-eye {
       width: 80%;
       height: 80%;
@@ -96,6 +119,23 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50px;
+    }
+
+    @media screen and (min-width:1440px) {
+      .left-eye,
+      .right-eye,
+      .inner-eye {
+        border-radius: 80px;
+      }
+    }
+
+
+    @media all and (min-width:2560px) {
+      .left-eye,
+      .right-eye,
+      .inner-eye {
+        border-radius: 120px;
+      }
     }
 
     .nose {

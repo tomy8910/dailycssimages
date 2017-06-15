@@ -13,6 +13,18 @@ body {
   width: 450px;
   height: 450px;
   z-index: 2;
+  @media all and (max-width: 375px) {
+    width: 375px;
+    height: 375px;
+  }
+  @media all and (min-width: 1440px) {
+    width: 800px;
+    height: 800px;
+  }
+  @media all and (min-width: 2560px) {
+    width: 1500px;
+    height: 1500px;
+  }
 }
 
 .beaver-head {
@@ -115,6 +127,9 @@ body {
   border-radius: 50px;
   top: 42%;
   left: 32%;
+  @media all and (min-width: 2560px) {
+    border-radius: 100px;
+  }
 }
 
 .beaver-left-cheek {
