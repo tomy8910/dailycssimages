@@ -4,13 +4,13 @@ body {
   background: #dab201; }
 
 .beaver {
-  border: 1px solid white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
-  height: 450px; }
+  height: 450px;
+  z-index: 2; }
 
 .beaver-head {
   width: 70%;
@@ -19,13 +19,16 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 15%;
-  left: 15%; }
+  left: 15%;
+  z-index: 6; }
 
 .beaver-head-copy {
   width: 100%;
   height: 100%;
   background: #a06d2c;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  z-index: 6; }
 
 .beaver-left-eye {
   background: white;
@@ -34,7 +37,8 @@ body {
   position: absolute;
   top: 3.2%;
   left: 20%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 7; }
 
 .beaver-right-eye {
   background: white;
@@ -43,7 +47,8 @@ body {
   position: absolute;
   top: 3.2%;
   right: 20%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 7; }
 
 .inner-eye {
   width: 45%;
@@ -53,7 +58,8 @@ body {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  z-index: 7; }
 
 .inner-eye::after {
   content: '';
@@ -62,6 +68,84 @@ body {
   background: white;
   position: absolute;
   border-radius: 50%;
-  right: 0; }
+  right: 0;
+  z-index: 5; }
+
+.beaver-left-ear {
+  width: 40%;
+  height: 40%;
+  background: #c88937;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: -10%;
+  left: 2%;
+  z-index: 1; }
+
+.beaver-right-ear {
+  width: 40%;
+  height: 40%;
+  background: #c88937;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform: rotate(30deg);
+  position: absolute;
+  top: -10%;
+  right: 2%;
+  z-index: 1; }
+
+.beaver-nose {
+  width: 35%;
+  height: 20%;
+  position: absolute;
+  background: #ff5a77;
+  z-index: 11;
+  border-radius: 50px;
+  top: 42%;
+  left: 32%; }
+
+.beaver-left-cheek {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  z-index: 10;
+  background: burlywood;
+  border-radius: 50%;
+  top: 45%;
+  left: -6%; }
+
+.beaver-right-cheek {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  z-index: 9;
+  background: #dcb37f;
+  border-radius: 50%;
+  top: 45%;
+  right: -6%; }
+
+.beaver-left-tooth {
+  width: 60%;
+  height: 40%;
+  background: white;
+  position: absolute;
+  z-index: 8;
+  -webkit-clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  top: 90%;
+  left: 10%; }
+
+.beaver-right-tooth {
+  width: 60%;
+  height: 40%;
+  background: #fafafa;
+  position: absolute;
+  z-index: 8;
+  -webkit-clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  top: 90%;
+  right: 13%;
+  transform: rotate(3deg); }
 
 /*# sourceMappingURL=beaver.css.map */

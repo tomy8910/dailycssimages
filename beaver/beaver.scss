@@ -6,13 +6,13 @@ body {
 }
 
 .beaver {
-  border: 1px solid white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
   height: 450px;
+  z-index: 2;
 }
 
 .beaver-head {
@@ -23,6 +23,7 @@ body {
   position: absolute;
   top: 15%;
   left: 15%;
+  z-index: 6;
 }
 
 .beaver-head-copy {
@@ -30,6 +31,8 @@ body {
   height: 100%;
   background: $base;
   border-radius: 50%;
+  position: absolute;
+  z-index: 6;
 }
 
 .beaver-left-eye {
@@ -40,6 +43,7 @@ body {
   top: 3.2%;
   left: 20%;
   border-radius: 50%;
+  z-index: 7;
 }
 
 .beaver-right-eye {
@@ -50,6 +54,7 @@ body {
   top: 3.2%;
   right: 20%;
   border-radius: 50%;
+  z-index: 7;
 }
 
 .inner-eye {
@@ -61,6 +66,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 7;
 }
 
 .inner-eye::after {
@@ -71,6 +77,89 @@ body {
   position: absolute;
   border-radius: 50%;
   right: 0;
+  z-index: 5;
 }
 
-.beaver-left-ear {}
+.beaver-left-ear {
+  width: 40%;
+  height: 40%;
+  background: lighten($base, 10);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: -10%;
+  left: 2%;
+  z-index: 1;
+}
+
+.beaver-right-ear {
+  width: 40%;
+  height: 40%;
+  background: lighten($base, 10);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform: rotate(30deg);
+  position: absolute;
+  top: -10%;
+  right: 2%;
+  z-index: 1;
+}
+
+.beaver-nose {
+  width: 35%;
+  height: 20%;
+  position: absolute;
+  background: darken(pink, 20);
+  z-index: 11;
+  border-radius: 50px;
+  top: 42%;
+  left: 32%;
+}
+
+.beaver-left-cheek {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  z-index: 10;
+  background: lighten($base, 30);
+  border-radius: 50%;
+  top: 45%;
+  left: -6%;
+}
+
+.beaver-right-cheek {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  z-index: 9;
+  background: lighten($base, 27.888);
+  border-radius: 50%;
+  top: 45%;
+  right: -6%;
+}
+
+.beaver-left-tooth {
+  width: 60%;
+  height: 40%;
+  background: white;
+  position: absolute;
+  z-index: 8;
+  -webkit-clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  top: 90%;
+  left: 10%;
+}
+
+.beaver-right-tooth {
+  width: 60%;
+  height: 40%;
+  background: darken(white, 2);
+  position: absolute;
+  z-index: 8;
+  -webkit-clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  clip-path: polygon(23% 0, 80% 0, 63% 100%, 38% 100%);
+  top: 90%;
+  right: 13%;
+  transform: rotate(3deg);
+}
