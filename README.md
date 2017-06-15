@@ -7,3 +7,6 @@
 
  **Day 2**
  [Elephant](https://tomy8910.github.io/dailycssimages/elephant/elephant.html)
+
+ **Day 3**
+ [Beaver](https://tomy8910.github.io/dailycssimages/beaver/beaver.html)
